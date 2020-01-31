@@ -1,6 +1,6 @@
 - Getting started
 
-  - [Quick start](readme.md)
+  - [Quick start](README.md)
 
 - Guide
 
