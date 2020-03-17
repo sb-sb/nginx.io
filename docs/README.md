@@ -1,28 +1,46 @@
 # Nginx.io
 
-> Nginx Debian / Ubuntu repository
+> A nginx Debian / Ubuntu repository
 
-## What it is
+## What is it?
 
-The default nginx repository from official Debian or Ubuntu image is always out-of-date, so we build nginx.io and you can install the latest nginx simply via `apt install nginx-extras`
+sb-nginx is a customized packaged version of famous [Nginx](https://nginx.org/) web server.
 
-Nginx.io is merged from official [Debian Nginx packaging repository](https://salsa.debian.org/nginx-team/nginx) and source code of [nginx](https://nginx.org/)
+## Why do we make it?
+
+Official Debian and Ubuntu releases are usually based on Nginx stable branch. While with stable branch you get a more stable API and expected behavior, you also lack the latest features that are implemented in the mainline branch.
+
+To enjoy the latest feature, you would normally have to compile and maintain the software by yourself. Now you don't have to do that any more, as we are providing and maintaining it for you. Simply include our repository in your source and enjoy the convenient rolling updates provided by our specialist.
+
+If you have heard about TLS 1.3, you would know that it comes with great improvement on performance and web security. Unfortunately most distributions are not ready for TLS 1.3, which means you may have to keep using the old protocol. We understand your concern, and that's why we packed OpenSSL 1.1.1 into our nginx as standard. Now TLS 1.3 is available to all of you regardless of what your distribution supports.
+
+On top of all those, we also include some extra modules that we think are handy to use.
+
+## How do we make it?
+
+We utilize the [official debian packaging scripts](https://salsa.debian.org/nginx-team/nginx) while pull the latest mainline branch from [Nginx official](http://nginx.org/en/download.html). You get exactly the same experience as Debian / Ubuntu official nginx packages, except that you'll get the latest release.
+
+We use docker script to create packages in a controlled Linux environment. We compile and maintain packages for each distribution we support to ensure ABI and API compatibility. We always pull the latest OpenSSL 1.1.1 releases before packaging to ensure known bug fixes are properly included.
+
+In case of an emergency security issue or a critical bug, we may include a patch from an unreleased version into current version and release beforehand.
 
 ## Current Version
 
-Nginx / 1.17.9
+Nginx 1.17.9
+
+[Install now or get docker image.](install.md)
 
 ## Features
 
-Everything from nginx-extras included, and we also add these nginx modules
+Everything from Debian / Ubuntu official builds are included, with the following nginx modules being added to full and extras flavor:
 
-* [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)
 * [ngx_brotli](https://github.com/google/ngx_brotli)
+* [ngx_http_geoip2_module](https://github.com/leev/ngx_http_geoip2_module)
 * [ngx_http_ipdb_module](https://github.com/vislee/ngx_http_ipdb_module)
 
-Built with OpenSSL 1.1.1d, you can use TLS 1.3 on SSL configuration.
+Statically built with OpenSSL 1.1.1d, so you can use TLS 1.3 even on distributions that don't have OpenSSL 1.1.1.
 
-Sample output:
+Version info:
 
 ```
 root@server ~ # nginx -V
