@@ -1,3 +1,9 @@
+April 23, 2020
+
+- Upgrade Nginx to 1.17.10
+- Upgrade OpenSSL to 1.1.1g
+
+
 Mar 8, 2020
 
 - Upgrade Nginx to 1.17.9
