@@ -26,7 +26,7 @@ In case of an emergency security issue or a critical bug, we may include a patch
 
 ## Current Version
 
-Nginx 1.19.1
+Nginx 1.19.2
 
 [Install now or get docker image.](install.md)
 
