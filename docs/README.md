@@ -18,7 +18,7 @@ On top of all those, we also include some extra modules that we think are handy 
 
 ## How do we make it?
 
-We utilize the [official debian packaging scripts](https://salsa.debian.org/nginx-team/nginx) while pull the latest mainline branch from [Nginx official](http://nginx.org/en/download.html). You get exactly the same experience as Debian / Ubuntu official nginx packages, except that you'll get the latest release.
+We utilize the [official debian packaging scripts](https://salsa.debian.org/nginx-team/nginx) while pulling the latest mainline branch from [Nginx official](http://nginx.org/en/download.html). You get the same experience as Debian / Ubuntu official nginx packages, except that you'll get the latest release.
 
 We use docker script to create packages in a controlled Linux environment. We compile and maintain packages for each distribution we support to ensure ABI and API compatibility. We always pull the latest OpenSSL 1.1.1 releases before packaging to ensure known bug fixes are properly included.
 

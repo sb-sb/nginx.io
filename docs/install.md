@@ -5,7 +5,7 @@
 * (LTS) Debian 11 Bullseye
 * (LTS) Ubuntu 18.04 Bionic
 * (LTS) Ubuntu 20.04 Focal
-* Ubuntu 19.10 Eoan
+* Ubuntu 20.10 Groovy
 
 ## Install via DEB
 
@@ -26,7 +26,7 @@ Check [Docker image for sb-nginx](https://github.com/brentybh/docker-sb-nginx)
 * Debian 8 Jessie
 * Ubuntu 14.04 Trusty
 * Ubuntu 16.04 Xenial
-* Ubuntu 19.04 Disco
+* Ubuntu 19.10 Eoan
 
 We do not provide full and long term support for legacy OS, but you can use it at your own risk. Non-supported OS will not always get the latest update and is on a best efforts basis.
 
