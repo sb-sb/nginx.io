@@ -1,3 +1,7 @@
+Nov 15, 2020
+
+- Upgrade Nginx to 1.19.4
+
 Oct 18, 2020
 
 - Upgrade Nginx to 1.19.3
