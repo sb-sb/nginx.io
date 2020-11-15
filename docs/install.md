@@ -32,8 +32,8 @@ We do not provide full and long term support for legacy OS, but you can use it a
 
 ```bash
 apt install apt-transport-https lsb-release ca-certificates curl gnupg -y
-curl https://mirrors.xtom.nl/sb/nginx/public-rsa.key | apt-key add -
-curl https://mirrors.xtom.nl/sb/nginx/public.key | apt-key add -
+curl https://mirrors.xtom.com/sb/nginx/public-rsa.key | apt-key add -
+curl https://mirrors.xtom.com/sb/nginx/public.key | apt-key add -
 echo "deb https://mirrors.xtom.com/sb/nginx/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/sb-nginx.list
 apt update
 apt install nginx-extras
