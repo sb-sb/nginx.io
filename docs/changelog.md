@@ -1,3 +1,7 @@
+Dec 25, 2020
+
+- Upgrade Nginx to 1.19.6
+
 Dec 10, 2020
 
 - Upgrade OpenSSL to 1.1.1i
