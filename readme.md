@@ -1,3 +1,3 @@
 # Nginx.io
 
-This repo has been moved to (https://github.com/sb-sb/nginx-io-docs)[sb-sb/nginx-io-docs]
+This repo has been moved to https://github.com/sb-sb/nginx-io-docs
